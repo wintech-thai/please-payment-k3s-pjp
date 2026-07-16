@@ -13,14 +13,14 @@ kubectl apply -f argocd-ing.yaml
 
   sed -i "s|^\([[:space:]]*\)repoURL: .*|\1repoURL: ${DATA_PLANE_REMOTE_REPO}|g" argocd-bootstrap-data-plane.yaml
   #sed -i "s|^\([[:space:]]*\)repoURL: .*|\1repoURL: ${CTRL_PLANE_REMOTE_REPO}|g" argocd-bootstrap-control-plane-dev.yaml
-  sed -i "s|^\([[:space:]]*\)repoURL: .*|\1repoURL: ${CTRL_PLANE_REMOTE_REPO}|g" argocd-bootstrap-control-plane-prod.yaml
+  sed -i "s|^\([[:space:]]*\)repoURL: .*|\1repoURL: ${CTRL_PLANE_REMOTE_REPO}|g" argocd-bootstrap-please-payment-prod.yaml
 
   #echo "Deploying DEV control plane"
   #kubectl apply -f argocd-bootstrap-control-plane-dev.yaml
 #fi
 
 echo "Deploying PROD control plane"
-kubectl apply -f argocd-bootstrap-control-plane-prod.yaml
+kubectl apply -f argocd-bootstrap-please-payment-prod.yaml
 
 echo "Deploying data plane"
 kubectl apply -f argocd-bootstrap-data-plane.yaml
