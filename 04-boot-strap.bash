@@ -39,6 +39,6 @@ kubectl apply -f ${YAML_FILE}.tmp
 # Sync code จาก remote มาที่ local
 # TODO : กำหนดเวอร์ชันของ data-plane, control-plane ที่จะ sync ได้
 # TODO : ปรับ config ได้ว่าจะ sync  control-plane ด้วยหรือไม่
-kubectl apply -f git-sync-job.yaml
+#kubectl apply -f git-sync-job.yaml
 
 cd ..
