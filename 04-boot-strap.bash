@@ -6,7 +6,7 @@ cd 01-bootstrap
 
 kubectl apply -f argocd-ing.yaml
 
-if [ "$MODE" = "dev" ]; then
+#if [ "$MODE" = "dev" ]; then
   # ให้ปรับ repoURL ให้ชี้ตรงไปที่ remote GIT ด้วย เพื่อให้ ArgoCD ไป sync มาจากตรงนั้นแทน
   DATA_PLANE_REMOTE_REPO=https://github.com/wintech-thai/please-payment-k3s-pjp.git
   #CTRL_PLANE_REMOTE_REPO=https://github.com/wintech-thai/please-protect-rproxy-control-plane.git
@@ -17,7 +17,7 @@ if [ "$MODE" = "dev" ]; then
 
   #echo "Deploying DEV control plane"
   #kubectl apply -f argocd-bootstrap-control-plane-dev.yaml
-fi
+#fi
 
 #echo "Deploying PROD control plane"
 #kubectl apply -f argocd-bootstrap-control-plane-prod.yaml
