@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: storage-config
+  namespace: default
+data:
+  MINIO_ENDPOINT_CUSTOM: "https://storage-api.kaspa-chain.net"
