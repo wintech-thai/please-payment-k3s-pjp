@@ -1,5 +1,5 @@
-domain1: storage-console.please-payment.com
-domain2: storage-api.please-payment.com
+domain1: storage-console.kaspa-chain.net
+domain2: storage-api.kaspa-chain.net
 
 minio:
   enabled: true
