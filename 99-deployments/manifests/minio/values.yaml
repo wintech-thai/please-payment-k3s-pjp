@@ -1,5 +1,5 @@
-domain1: storage-console.kaspa-chain.net
-domain2: storage-api.kaspa-chain.net
+domain1: storage-console.sgdwallets.com
+domain2: storage-api.sgdwallets.com
 
 minio:
   enabled: true
@@ -47,5 +47,5 @@ minio:
       purge: false
 
   environment:
-    MINIO_SERVER_URL: https://storage-api.kaspa-chain.net
-    MINIO_BROWSER_REDIRECT_URL: https://storage-console.kaspa-chain.net
+    MINIO_SERVER_URL: https://storage-api.sgdwallets.com
+    MINIO_BROWSER_REDIRECT_URL: https://storage-console.sgdwallets.com

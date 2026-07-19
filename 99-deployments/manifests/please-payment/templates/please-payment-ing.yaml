@@ -34,7 +34,7 @@ spec:
   tls:
     - hosts:
       - {{ .Values.domain1 }}
-      #secretName: admin-cert
+      secretName: admin-cert
   rules:
     - host: {{ .Values.domain1 }}
       http:
@@ -60,7 +60,7 @@ spec:
   tls:
     - hosts:
       - {{ .Values.domain2 }}
-      #secretName: merchant-cert
+      secretName: merchant-cert
   rules:
     - host: {{ .Values.domain2 }}
       http:
@@ -86,7 +86,7 @@ spec:
   tls:
     - hosts:
       - {{ .Values.domain3 }}
-      #secretName: api-cert
+      secretName: api-cert
   rules:
     - host: {{ .Values.domain3 }}
       http:
