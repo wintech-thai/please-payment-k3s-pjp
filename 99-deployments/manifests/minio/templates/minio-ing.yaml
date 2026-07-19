@@ -11,6 +11,7 @@ spec:
   tls:
     - hosts:
       - {{ .Values.domain2 }}
+      secretName: minio-api-cert
   rules:
     - host: {{ .Values.domain2 }}
       http:
@@ -36,6 +37,7 @@ spec:
   tls:
     - hosts:
       - {{ .Values.domain1 }}
+      secretName: minio-console-cert
   rules:
     - host: {{ .Values.domain1 }}
       http:
