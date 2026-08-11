@@ -1,6 +1,6 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: storage-config
+  name: custom-config
 data:
-  MINIO_ENDPOINT_CUSTOM: "https://storage-api.sgdwallets.com"
+  CUSTOM_CHATBOT_DISABLE: "true"
