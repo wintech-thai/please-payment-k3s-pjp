@@ -24,7 +24,7 @@ spec:
 
           parameters:
             - name: jobAiKnowledgeDispatcherEnable
-              value: false
+              value: "false"
 
           valueFiles:
             - values-files/values-production.yaml
