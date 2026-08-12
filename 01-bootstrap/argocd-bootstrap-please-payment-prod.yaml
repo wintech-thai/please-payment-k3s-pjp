@@ -21,6 +21,11 @@ spec:
         helm:
           releaseName: please-payment-prod
           ignoreMissingValueFiles: true
+
+          parameters:
+            - name: jobAiKnowledgeDispatcherEnable
+              value: false
+
           valueFiles:
             - values-files/values-production.yaml
 
